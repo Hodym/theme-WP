@@ -22,7 +22,7 @@
                     </div>
                 <?php endwhile;
                 else :
-                _e( 'Sorry, no posts were found.', 'textdomain' );
+                _e( 'На жаль, публікацій не знайдено.', 'textdomain' );
                 endif; ?>
 
             </div>

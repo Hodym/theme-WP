@@ -6,9 +6,15 @@
 
 			<?php while (have_posts()) : the_post();
 
-				get_template_part('template-parts/content', get_post_type());
+				if ( in_category('objects') ) {
 
+					get_template_part('template-parts/content-objects', get_post_type());
 
+				} else {
+					
+					get_template_part('template-parts/content', get_post_type());
+					
+				}
 
 			endwhile; ?>
 
