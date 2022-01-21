@@ -3,10 +3,7 @@
 <div class="site-content flex-grow-1 flex-shrink-0 mt-5 mt-md-0">
     <section class="page mt-3">
         <div class="container">
-            <div class="page-header mb-4">
-                <h1 class="h2 page-title font-weight-normal text-center text-muted">О компании</h1>
-                <div class="page-subtitle lead text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, iure?</div>
-            </div>
+            <?php get_template_part( 'template-parts/temp-page-header' ); ?>
             <div class="page-content">
                 <section class="personal">
                     <div class="section-header mb-3">
@@ -28,13 +25,13 @@
                             </div>
                             <div class="col-xl-8">
                                 <div class="card-columns">
-                                    <div class="card"><img class="card-img" src="assets/images/personal/personal_01.jpg" alt="Personal"></div>
-                                    <div class="card"><img class="card-img" src="assets/images/personal/personal_02.jpg" alt="Personal"></div>
-                                    <div class="card"><img class="card-img" src="assets/images/personal/personal_03.jpg" alt="Personal"></div>
-                                    <div class="card"><img class="card-img" src="assets/images/personal/personal_04.jpg" alt="Personal"></div>
-                                    <div class="card"><img class="card-img" src="assets/images/personal/personal_05.jpg" alt="Personal"></div>
-                                    <div class="card"><img class="card-img" src="assets/images/personal/personal_06.jpg" alt="Personal"></div>
-                                    <div class="card"><img class="card-img" src="assets/images/personal/personal_07.jpg" alt="Personal"></div>
+                                    <div class="card"><img class="card-img" src="<?php bloginfo('template_url'); ?>/assets/images/personal/personal_01.jpg" alt="Personal"></div>
+                                    <div class="card"><img class="card-img" src="<?php bloginfo('template_url'); ?>/assets/images/personal/personal_02.jpg" alt="Personal"></div>
+                                    <div class="card"><img class="card-img" src="<?php bloginfo('template_url'); ?>/assets/images/personal/personal_03.jpg" alt="Personal"></div>
+                                    <div class="card"><img class="card-img" src="<?php bloginfo('template_url'); ?>/assets/images/personal/personal_04.jpg" alt="Personal"></div>
+                                    <div class="card"><img class="card-img" src="<?php bloginfo('template_url'); ?>/assets/images/personal/personal_05.jpg" alt="Personal"></div>
+                                    <div class="card"><img class="card-img" src="<?php bloginfo('template_url'); ?>/assets/images/personal/personal_06.jpg" alt="Personal"></div>
+                                    <div class="card"><img class="card-img" src="<?php bloginfo('template_url'); ?>/assets/images/personal/personal_07.jpg" alt="Personal"></div>
                                 </div>
                             </div>
                         </div>
