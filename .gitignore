@@ -1,0 +1,8 @@
+# Assets
+/themes/sunrise/assets/
+
+# Libs
+/themes/sunrise/libs/
+
+# Portable Network Graphics
+*.png
