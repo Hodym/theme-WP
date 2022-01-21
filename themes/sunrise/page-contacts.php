@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <div class="card px-3 pt-3 mb-5 bg-light contacts-address">
-              <address><strong>Organization name</strong><br>Polyska str., 1985<br>Kropyvna<br>Ukrainian, 07234<br><a href="mailto:example@example.com">example@example.com</a></address>
+              <address><?php dynamic_sidebar( 'address-1' ); ?></address>
             </div>
           </div>
           <div class="col-md-6 col-lg-8">
