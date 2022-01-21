@@ -186,3 +186,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Customizer breadcrumb.
+ */
+require get_template_directory() . '/func-parts/breadcrumb.php';
+

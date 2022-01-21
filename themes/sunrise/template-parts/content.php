@@ -3,9 +3,7 @@
 </div>
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb mt-4">
-		<li class="breadcrumb-item"><a href="#">Главная</a></li>
-		<li class="breadcrumb-item"><a href="#">Блог</a></li>
-		<li class="breadcrumb-item active" aria-current="page">Lorem ipsum dolor sit amet</li>
+		<?php wmk_breadcrumb(); ?>
 	</ol>
 </nav>
 <div class="page-content">
