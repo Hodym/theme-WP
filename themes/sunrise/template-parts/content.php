@@ -10,6 +10,7 @@
 		<?php the_content(); ?>
 </div>
 <div class="page-footer">
+	<div class="single-date lead font-italic"><?php the_tags('Мiтки: '); ?></div>
 	<div class="single-date lead font-italic"><?php the_date(); ?></div>
 	<!-- ---- Rambler.Likes script start ------>
 	<div class="rambler-share text-center"></div>
