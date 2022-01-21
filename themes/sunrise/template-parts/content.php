@@ -1,63 +1,44 @@
-<?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package sunrise
- */
-
-?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				sunrise_posted_on();
-				sunrise_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php sunrise_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'sunrise' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sunrise' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php sunrise_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<div class="page-header mb-4">
+	<h1 class="h2 page-title font-weight-normal text-center text-muted"><?php the_title(); ?></h1>
+</div>
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb mt-4">
+		<li class="breadcrumb-item"><a href="#">Главная</a></li>
+		<li class="breadcrumb-item"><a href="#">Блог</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Lorem ipsum dolor sit amet</li>
+	</ol>
+</nav>
+<div class="page-content">
+		<?php the_content(); ?>
+</div>
+<div class="page-footer">
+	<div class="single-date lead font-italic"><?php the_date(); ?></div>
+	<!-- ---- Rambler.Likes script start ------>
+	<div class="rambler-share text-center"></div>
+	<script>
+		(function() {
+			var init = function() {
+				RamblerShare.init('.rambler-share', {
+					"style": {
+						"buttonBackground": "#555"
+					},
+					"utm": "utm_medium=social",
+					"counters": false,
+					"buttons": [
+						"vkontakte",
+						"facebook",
+						"odnoklassniki",
+						"twitter",
+						"pinterest"
+					]
+				});
+			};
+			var script = document.createElement('script');
+			script.onload = init;
+			script.async = true;
+			script.src = 'https://developers.rambler.ru/likes/v1/widget.js';
+			document.head.appendChild(script);
+		})();
+	</script>
+	<!-- ----   Rambler.Likes script end  ------>
+</div>
