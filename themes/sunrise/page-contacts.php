@@ -11,12 +11,12 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4">
                   <div class="card px-3 pt-3 mb-5 bg-light contacts-address">
-                    <address><strong>Organization name</strong><br>Ivanova str., 17<br>Moscow<br>Russian Federation, 123456<br><a href="mailto:example@example.com">example@example.com</a></address>
+                    <address><strong>Organization name</strong><br>Polyska str., 17<br>Kropyvna<br>Ukrainian, 07234<br><a href="mailto:example@example.com">example@example.com</a></address>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-8">
                   <div class="contacts-map w-100">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7642059308!2d36.82512580492329!3d55.58074806111345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1534497550466" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40240.465562601705!2d29.480380779139196!3d50.923178737299615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472bab1c9c15e0ab%3A0x74e778cb8f9f67ec!2z0JrRgNCw0L_QuNCy0L3Rjywg0JrQuNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMDcyMzQ!5e0!3m2!1sru!2sua!4v1642090060482!5m2!1sru!2sua" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                   </div>
                 </div>
               </div>
