@@ -29,10 +29,7 @@
           <div class="header-btn header-top shadow" id="header-btn">Меню</div>
           <div class="search" id="search">
             <div class="search-close display-4 text-light position-absolute" id="search-close"><i class="fas fa-times"></i></div>
-            <form class="search-form h-100 w-100 d-flex align-items-center justify-content-center mx-auto px-3">
-              <input class="form-control mr-3 px-2 py-3" type="search" placeholder="Поиск по сайту">
-              <input class="btn btn-theme" id="search-btn" type="submit" value="Найти">
-            </form>
+            <?php get_search_form(); ?>
           </div>
           <?php if (has_nav_menu('header')): ?>
             <nav class="header-menu" id="header-menu">
@@ -47,15 +44,7 @@
             ?>
             </nav><!-- .header-menu -->
           <?php endif; ?>
-          <!-- <nav class="header-menu" id="header-menu">
-            <ul class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
-              <li><a href="http://localhost:3000">Главная</a></li>
-              <li><a href="about.html">О компании</a></li>
-              <li><a href="objects.html">Наши объекты</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav> -->
+
         </div>
       </header>
       
