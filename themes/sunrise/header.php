@@ -12,48 +12,52 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+<html class="h-100">
+  <head>
+  	<meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'sunrise' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$sunrise_description = get_bloginfo( 'description', 'display' );
-			if ( $sunrise_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $sunrise_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
+    <?php wp_head(); ?>
+  </head>
+  <body class="bg-light h-100">
+    <div class="site mx-auto d-flex flex-column h-100 w-100 position-relative">
+      <header class="site-header">
+        <div class="container position-relative">
+          <div class="header-phone header-top shadow">+38 (068) 544 71 98 </div>
+          <div class="header-search header-top shadow" id="header-search"><i class="fas fa-search"></i></div>
+          <div class="header-btn header-top shadow" id="header-btn">Меню</div>
+          <div class="search" id="search">
+            <div class="search-close display-4 text-light position-absolute" id="search-close"><i class="fas fa-times"></i></div>
+            <form class="search-form h-100 w-100 d-flex align-items-center justify-content-center mx-auto px-3">
+              <input class="form-control mr-3 px-2 py-3" type="search" placeholder="Поиск по сайту">
+              <input class="btn btn-theme" id="search-btn" type="submit" value="Найти">
+            </form>
+          </div>
+		  <nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'sunrise' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<!-- <?php
+			// wp_nav_menu(
+			// 	array(
+			// 		'theme_location' => 'menu-1',
+			// 		'menu_id'        => 'primary-menu',
+			// 	)
+			// );
+			?> -->
+			</nav><!-- #site-navigation -->
+          <nav class="header-menu" id="header-menu">
+            <ul class="h-100 w-100 d-flex flex-column justify-content-center align-items-center">
+              <li><a href="http://localhost:3000">Главная</a></li>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="objects.html">Наши объекты</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+
+
+
+
