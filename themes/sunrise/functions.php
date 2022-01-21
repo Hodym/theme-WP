@@ -141,6 +141,16 @@ function sunrise_scripts() {
 	wp_enqueue_style( 'sunrise-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'sunrise-style', 'rtl', 'replace' );
 
+	wp_enqueue_style( 'sunrise-bootstrap-css', get_template_directory_uri() . '/libs/bootstrap/bootstrap.min.css', array(), _S_VERSION, false );
+	wp_enqueue_style( 'sunrise-fa-css', get_template_directory_uri() . '/libs/font-awesome/css/fontawesome-all.min.css', array(), _S_VERSION, false );
+	wp_enqueue_style( 'sunrise-animate-css', get_template_directory_uri() . '/libs/animate.css/animate.min.css', array(), _S_VERSION, false );
+	wp_enqueue_style( 'sunrise-custom-css', get_template_directory_uri() . '/assets/css/custom.min.css', array(), _S_VERSION, false );
+
+	wp_enqueue_script( 'jquery', array(), _S_VERSION, true );
+	wp_enqueue_script( 'sunrise-bootstrap-js', get_template_directory_uri() . '/libs/bootstrap/bootstrap.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'sunrise-wowjs', get_template_directory_uri() . '/libs/wow/wow.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'sunrise-custom-js', get_template_directory_uri() . '/assets/js/custom.min.js', array(), _S_VERSION, true );
+	
 	wp_enqueue_script( 'sunrise-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
