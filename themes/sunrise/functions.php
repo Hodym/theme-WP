@@ -172,6 +172,16 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require get_template_directory() . '/func-parts/breadcrumb.php';
 
 /**
+ * Customizer breadcrumb.
+ */
+require get_template_directory() . '/func-parts/tax_breadcrumb.php';
+
+/**
  * Register widget area.
  */
 require get_template_directory() . '/func-parts/widgets.php';
+
+/**
+ * Taxonomy and custom types.
+ */
+require get_template_directory() . '/custom-types.php';
